@@ -1,10 +1,10 @@
 require "nvchad.mappings"
 
--- add yours here
-
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
+map("n", "<C-l>", ":NoiceDismiss<CR>", { desc = "Dismiss Popup Messages" })
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "<C-s>", "<cmd> w <cr>")
+map("i", "<C-s>", "<cmd> w <cr>")
+map("v", "<C-s>", "<cmd> w <cr>")
