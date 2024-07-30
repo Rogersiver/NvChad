@@ -1,7 +1,6 @@
 return {
   {
     "stevearc/conform.nvim",
-<<<<<<< Updated upstream
     -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
@@ -9,8 +8,6 @@ return {
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
-    config = function()
-=======
     config = function()
       require "configs.conform"
     end,
@@ -20,22 +17,19 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       require("nvchad.configs.lspconfig").defaults()
->>>>>>> Stashed changes
       require "configs.lspconfig"
     end,
   },
 
-<<<<<<< Updated upstream
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
-=======
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "html", "css", "terraform", "python", "ansible", "yaml"
+  		},
+  	},
+  },
   {
     "williamboman/mason.nvim",
     opts = {
@@ -158,5 +152,4 @@ return {
     },
     { 'echasnovski/mini.nvim', version = '*' },
   }
->>>>>>> Stashed changes
 }
