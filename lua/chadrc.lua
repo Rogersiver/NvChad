@@ -10,7 +10,7 @@ M.base46 = {
 	},
 }
 M.ui = {
-  theme = "ayu_dark",
+  theme = "tokyonight",
   lsp = { signature = false },
   hl_override = {
     Comment = { italic = true },
